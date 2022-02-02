@@ -54,7 +54,7 @@ function addStar() {
 }
 
 Array(200).fill().forEach(addStar)
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./public/space.jpg');
 scene.background = spaceTexture;
 
 
@@ -72,7 +72,7 @@ animate()
 
 
 //Avatar 
-const tristanTexture = new THREE.TextureLoader().load('aboutMe2.jpg');
+const tristanTexture = new THREE.TextureLoader().load('./public/aboutMe2.jpg');
 
 const Tristan = new THREE.Mesh(
   new THREE.BoxGeometry(4, 4, 4),
@@ -84,8 +84,8 @@ scene.add(Tristan);
 
 
 //Earth
-const earthTexture = new THREE.TextureLoader().load('earth.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg')
+const earthTexture = new THREE.TextureLoader().load('./public/earth.jpg');
+const normalTexture = new THREE.TextureLoader().load('./public/normal.jpg')
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial( {
@@ -100,7 +100,7 @@ scene.add(earth)
 
 
 //Sun
-const sunTexture = new THREE.TextureLoader().load('sun.jpg');
+const sunTexture = new THREE.TextureLoader().load('./public/sun.jpg');
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial( {
